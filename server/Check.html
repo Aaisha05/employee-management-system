@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Upload</title>
+</head>
+<body>
+  <h1>File Upload</h1>
+  
+  <input type="file" id="file-upload">
+  <button id="submit-btn">Submit</button>
+
+  <script>
+    document.getElementById('submit-btn').addEventListener('click', function() {
+      var fileInput = document.getElementById('file-upload');
+      var file = fileInput.files[0];
+
+      var formData = new FormData();
+      formData.append('file', file);
+
+      fetch('http://localhost:8000/single-file', {
+        method: 'POST',
+        body: formData
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          // Handle the response
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          // Handle the error
+        });
+    });
+  </script>
+</body>
+</html>

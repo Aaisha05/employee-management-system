@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details Form</title>
+    <link rel="stylesheet" href="/form.css"/>
+</head>
+
+
+
+
+<body>
+  <header>Employee Onboarding Form</header>
+
+
+  <!--personal details-->
+  
+  <div class="form-section">
+    <div class="title">Personal details</div>
+    
+    <form  id="formData">
+
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">First Name <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter your first name" id="name" name="name" required> 
+        </div>
+        
+        <div class="input-box">
+          <span class="details">Last Name <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter your last name" id="lastName" name="name" required>
+        </div>
+
+        <div class="input-box">
+          <span class="details">DOB <span class="oo"> *</span> </span>
+          <br>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Gender <span class="oo"> *</span> </span> 
+          <br>
+          <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option> 
+          </select>    
+        </div>
+
+        <div class="input-box">
+          <span class="details">Nationality <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter nationality" id="nationality" name="name" required>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  <!--contact details-->
+
+
+
+    
+  <div class="form-section">
+    <div class="title">Contact deatils</div>
+    <form action="#">
+
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Permanent Address <span class="oo"> *</span> </span>
+          <br>
+          <input type="texty" placeholder="Enter your permanent address" id="address1" name="name" required >
+        </div>
+
+        <div class="input-box">
+          <span class="details">Present Address <span class="oo"> *</span> </span>
+          <br>
+          <input type="texty" placeholder="Enter your present address" id="address2" name="name" required>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Name</span> <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter your name" id="name1" name="name" required> 
+        </div>
+
+        <div class="input-box">
+          <span class="details">Email <span class="oo"> *</span> </span>
+          <br>
+          <input type="email" placeholder="Enter your email" id="email1" name="email" required>
+        </div>
+        
+       
+        <div class="input-box">
+          <span class="details">Phone Number <span class="oo"> *</span> </span>
+          <br>
+          <input type="tel" placeholder="Enter your phone number" id="phone1" name="phone" required>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Bachelor degree <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" id="bdegree" placeholder="Enter your qualification" name="name" required>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Master degree <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" id="mdegree" placeholder="Enter your qualification" name="name" required>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Specification <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" id="spec" placeholder="Enter your specification" name="name" required>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Year of graduation <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" id="yog" placeholder="Enter your graduation year" name="name" required>
+        </div>
+
+        <!--added
+        
+        <div class="input-box">
+          <span class="details">City <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter your city" id="dis" name="name" required> 
+        </div> -->
+
+        <div class="input-box">
+          <span class="details">District <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter your district" id="dis" name="name" required> 
+        </div>
+
+        <!--
+        <div class="input-box">
+          <span class="details">Country <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter your country" id="dis" name="name" required> 
+        </div>-->
+      
+        
+        <div class="input-box">
+          <span class="details">Educational certificates <span class="oo"> *</span> </span>
+          <br>
+          <input type="file" id="file-upload" name="file">
+         
+        </div>
+        <div class="input-box">
+          <span class="details">State <span class="oo"> *</span> </span> 
+          <br>
+          <select id="stat"  name="gender" required>
+            <option value="">Select</option>
+            <option value="tn">Tamil Nadu</option>
+            <option value="ap">Andhra Pradesh</option>
+            <option value="other">Other</option> 
+          </select>    
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+
+  <!--Employee details-->
+
+      
+  <div class="form-section">
+    <div class="title">Employee details</div>
+    <form action="#">
+
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Name <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" id="emp_name" placeholder="Enter name of employee" name="name" required>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Email <span class="oo"> *</span> </span>
+          <br>
+          <input type="email" placeholder="Enter your email" id="emp_email" name="email" required>
+        </div>
+        
+
+        <div class="input-box">
+          <span class="details">Phone Number <span class="oo"> *</span> </span>
+          <br>
+          <input type="tel" placeholder="Enter your phone number" id="emp_phone" name="phone" required>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Job title <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" id="emp_job" placeholder="Enter your job title" name="name" required>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Previous Company name <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" id="emp_prev_comp" placeholder="Enter your previous company name" name="name" required>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Department <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" id="emp_dept" placeholder="Enter your department" name="name" required>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Existing company offer letter <span class="oo"> *</span> </span>
+          <br>
+          <input type="file" id="file-upload_1" name="file">
+        </div>
+
+
+        <div class="input-box">
+          <span class="details">Payslip <span class="oo"> *</span> </span>
+          <br>
+          <input type="file" id="file-upload_2" name="file">
+        </div>
+
+        <div class="input-box">
+          <span class="details">Address Proof <span class="oo"> *</span> </span>
+          <br>
+          <input type="file" id="file-upload_3" name="file">
+        </div>
+
+        <div class="input-box">
+          <span class="details">Passport copy <span class="oo"> *</span> </span>
+          <br>
+          <input type="file" id="file-upload_4" name="file">
+        </div>
+
+        <div class="input-box">
+          <span class="details">Photo copy <span class="oo"> *</span> </span>
+          <br>
+          <input type="file" id="file-upload_5" name="file">
+        </div>
+
+        <div class="input-box">
+          <span class="details">Experience letter <span class="oo"> *</span> </span>
+          <br>
+          <input type="file" id="file-upload_6" name="file">
+        </div>
+
+        <div class="input-box">
+          <span class="details">Bank statement <span class="oo"> *</span> </span>
+          <br>
+          <input type="file" id="file-upload_7" name="file">
+        </div>
+
+        <div class="input-box">
+          <span class="details">Bank account details <span class="oo"> *</span> </span>
+          <br>
+          <input type="file" id="file-upload_8" name="file">
+        </div>
+
+
+
+      </div>
+
+    </form>
+  </div>
+
+  
+  <!--address proofs -->
+  <div class="form-section">
+    <div class="title">Address proofs</div>
+    <form  id="formData">
+
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Aadhar number <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter your aadhar number" id="num1" name="name" required> 
+        </div>
+        
+        <div class="input-box">
+          <span class="details">Pan card number <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter your pan card number" id="num2" name="name" required>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Select other proofs <span class="oo"> *</span> </span>
+          <br>
+          <input type="file" id="file-upload_9" name="file"> 
+        </div>
+
+        <div class="input-box">
+          <span class="details">Passport photo <span class="oo"> *</span> </span>
+          <br>
+          <input type="file" id="file-upload_10" name="file"> 
+        </div>
+
+      </div>
+
+    </form>
+  </div>
+
+  <!--educational details-->
+   
+  <div class="form-section">
+    <div class="title">Educational details</div>
+    <form  id="formData">
+
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">SSLC school name <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter school name" id="sslc" name="name" required> 
+        </div>
+        
+        <div class="input-box">
+          <span class="details">Year of passed out <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter year of passed out" id="year1" name="name" required>
+        </div>
+
+        <div class="input-box">
+          <span class="details"> SSLC percentage <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter percentage" id="per1" name="name" required>
+        </div>
+        <div class="input-box">
+          <span class="details"> SSLC marks <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter marks" id="mark1" name="name" required>
+        </div>
+        <div class="input-box">
+          <span class="details"> HSS school name <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter school name" id="hss" name="name" required>
+        </div>
+        <div class="input-box">
+          <span class="details"> Year of passed out <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter year of passed out" id="year2" name="name" required>
+        </div>
+        <div class="input-box">
+          <span class="details"> HSS percentage <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter percentage" id="per2" name="name" required>
+        </div>
+        <div class="input-box">
+          <span class="details"> HSS marks <span class="oo"> *</span> </span>
+          <br>
+          <input type="text" placeholder="Enter marks" id="mark2" name="name" required>
+        </div>
+        <div class="input-box">
+          <span class="details"> Marital status <span class="oo"> *</span> </span>
+          <br>
+          <select id="maritalStatus" onchange="showSpouseForm()">
+            <option value="single">Select</option>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+          </select>
+
+          <div id="spouseForm" class="hidden">
+            <div class="title">Spouse details</div>
+            
+            <div class="input-box">
+              <span class="details">Spouse Name <span class="oo"> *</span> </span>
+              <br>
+              <input type="text" placeholder="Enter your first name" id="name" name="name" required> 
+            </div>
+
+            <div class="input-box">
+              <span class="details">Spouse Gender <span class="oo"> *</span> </span> 
+              <br>
+              <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option> 
+              </select>    
+            </div>
+            
+            <div class="input-box">
+              <span class="details">Spouse Age <span class="oo"> *</span> </span>
+              <br>
+              <input type="text" placeholder="Enter your spouse's age" id="name" name="name" required> 
+            </div>
+<!--
+            <div class="input-box">
+              <span class="details">Do you have any children? <span class="oo"> *</span> </span> 
+              <br>
+              <select id="mStatus" onchange="showChildForm()">
+                <option value="single">Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>  
+
+              <div id="childForm" class="hidden1">
+                <div class="title">Children details</div>
+                
+                <div class="input-box">
+                  <span class="details">Number of children <span class="oo"> *</span> </span>
+                  <br>
+                  <input type="text" placeholder="Enter name" id="name" name="name" required> 
+                </div>
+    
+            </div>-->
+          </div>
+          <script>
+            //spouse form
+            function showSpouseForm() {
+              var maritalStatus = document.getElementById("maritalStatus").value;
+              var spouseForm = document.getElementById("spouseForm");
+              
+              if (maritalStatus === "married") {
+                spouseForm.classList.remove("hidden");
+              } else {
+                spouseForm.classList.add("hidden");
+              }
+            }
+            //child form
+           /* function showChildForm() {
+              var mStatus = document.getElementById("mStatus").value;
+              var ChildForm = document.getElementById("childForm");
+              
+              if (mStatus === "yes") {
+                childForm.classList.remove("hidden1");
+              } else {
+                childForm.classList.add("hidden1");
+              }
+            }*/
+          </script>
+
+        </div>      
+         
+      </div>
+
+    </form>
+  </div> 
+
+
+ 
+
+  <!--emergency contacts-->
+
+
+    
+  <div class="form-section">
+    <div class="title">Emergency contacts</div>
+    <form action="#">
+
+      <div class="user-details">
+             
+       
+        <div class="input-box">
+          <span class="details">Name of emergency contact <span class="oo"> *</span> </span>
+          <br>
+          <input type="tel" placeholder="Enter number" id="name_em" name="phone" required>
+        </div>
+
+        <div class="input-box">
+          <span class="details">Contact number <span class="oo"> *</span> </span>
+          <br>
+          <input type="tel" placeholder="Enter phone number" id="phone_em" name="phone" required>
+        </div>
+          
+        
+      </div>
+
+    </form>
+  </div>
+    
+
+  <button  id="submitt">Submit</button>
+  <button id="logout">Logout</button>
+  </form>
+  
+  <script src="form.js"></script>
+  
+
+</body>
+</html>
